@@ -1,0 +1,257 @@
+/* Reset default margin and padding for elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background and text color */
+body {
+    background-color: black;
+    background-image: url('../images/background.jpg'); /* Replace with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff; /* Set text color to white for readability */
+    font-family: Arial, sans-serif;
+}
+/* Style the header */
+header {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between; /* Distribute items horizontally */
+        align-items: center; /* Vertically center items */
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 0
+}
+
+/* Style sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+}
+
+/* Style links */
+a {
+    color: #ff0000; /* Red color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Glassmorphism effect for sections */
+section, footer {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+    
+    section {
+        margin: 10px;
+    }
+}
+/* Style the navigation menu */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last menu item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0000; /* Red color for links */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+/* Style for the carousel container */
+.carousel-container {
+    width: 85%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+    height: 90%;
+}
+
+/* Style for individual slides (images) */
+.carousel img {
+    width:75%;
+    height: auto;
+    border-radius: 2px;
+    display: block;
+}
+
+
+/* Style for the carousel section */
+/* Style for the hero section */
+.hero {
+    background-image: url('images/hero-background.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 150px 0; /* Adjust top and bottom padding for spacing */
+}
+
+/* Style for the hero content */
+.hero-content {
+    max-width: 800px; /* Adjust content width as needed */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+/* Style for the headline */
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for the subheadline/description */
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Style for the CTA button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red button background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+.btn:hover {
+    background-color: #d60000; /* Darker red color on hover */
+}
+
+.carousel p{
+    margin: 10px;
+}
+/* Style for the projects section */
+.projects {
+    background-color: #ffffffa9; /* Background color for the section */
+    padding: 40px 80px; /* Adjust top and bottom padding for spacing */
+    text-align: center;
+}
+
+/* Style for the section title */
+.projects h2 {
+    font-size: 24px;
+    color: #ff0000; /* Red color for the title */
+    margin-bottom: 20px;
+}
+
+/* Style for project cards */
+.project-card {
+    background-color: rgba(0, 0, 0, 0.1); /* Background color for project cards */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a glassmorphism effect */
+    backdrop-filter: blur(10px); /* Glassmorphism background effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border for project cards */
+    text-align: center;
+}
+
+/* Style for project images */
+.project-card img {
+    max-width: 100%; /* Ensure images fit within the project card */
+    height: auto; /* Maintain the aspect ratio of images */
+    margin-bottom: 10px; /* Add spacing between image and project title */
+}
+
+/* Style for project titles */
+.project-card h3 {
+    font-size: 20px;
+    color: #000; /* Text color for project titles */
+}
+
+/* Style for project descriptions */
+.project-card p {
+    font-size: 16px;
+    color: #333; /* Text color for project descriptions */
+}
+/* Style the carousel dots */
+.slick-dots {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px; /* Adjust the margin to position the dots vertically */
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px; /* Adjust the margin to control the spacing between dots */
+}
+
+.slick-dots li button {
+    width: 12px; /* Adjust the width of the dots */
+    height: 12px; /* Adjust the height of the dots */
+    border: none;
+    border-radius: 50%; /* Make the dots circular */
+    background-color: #740000; /* Red color for the dots */
+    opacity: 0.7; /* Adjust the opacity for the dots */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+.slick-dots li.slick-active button {
+    background-color: #d60000; /* Darker red color for active dot */
+    opacity: 1; /* Full opacity for active dot */
+}
+
+
+/* Style for the carousel container */
+
+/* Center align the content within each slide */
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JThrice's Personal Page</title>
+
+    <!-- Add these links in the <head> section of your HTML -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JThrice</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <script>
+        $(document).ready(function () {
+          $(".carousel").slick({
+            autoplay: true, // Auto-play the carousel
+            dots: true, // Display navigation dots
+            arrows: true, // Hide navigation arrows
+            responsive: [
+              {
+                breakpoint: 10000,
+                settings: {
+                  slidesToShow: 2,
+                },
+              },
+            ],
+          });
+        });
+      </script>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to JThrice's Personal Webpage</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, culpa?</p>
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
+    </section>
+    <section>
+      <h2>Carousel Section</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="slide">
+            <h2>Slide 1</h2>
+            <img src="images/slide1.jpg" alt="Slide 1" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+              aliquam praesentium ab corrupti dignissimos ea facilis, a expedita
+              voluptatum commodi dolorum molestias maiores at dolorem fugit,
+              deserunt soluta explicabo porro.
+            </p>
+          </div>
+          <div class="slide">
+            <h2>Slide 2</h2>
+            <img src="images/slide2.jpg" alt="Slide 2" />
+            
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+              ipsum eveniet voluptatem delectus ab tenetur asperiores. Voluptate
+              quaerat eum impedit cupiditate perferendis voluptatibus fugiat
+              esse commodi suscipit odio, accusamus accusantium.
+            </p>
+          </div>
+          <div class="slide">
+            <h2>Slide 3</h2>
+            <img src="images/slide3.jpg" alt="Slide 3" />
+            
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+              atque molestias dolor iusto blanditiis, aperiam excepturi velit
+              voluptate quod adipisci voluptas unde necessitatibus, cum
+              accusamus dolorum repudiandae rerum. Quod, eaque?
+            </p>
+          </div>
+          <div class="slide">
+            <h2>Slide 4</h2>
+            <img src="images/slide4.jpg" alt="Slide 4" />
+            
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              impedit, illo quo a ad harum voluptates ea culpa, non facilis
+              quasi mollitia, adipisci dignissimos totam. Recusandae fugiat hic
+              repellat accusantium?
+            </p>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+      </div>
+      <p>Some content related to the carousel section...</p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <h3>Project 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus animi magnam facere? Similique, repellat illo. Iste,
+          maiores enim aliquam culpa molestiae odio incidunt reiciendis
+          perferendis vel est nesciunt perspiciatis ratione?
+        </p>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <h3>Project 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+          blanditiis culpa sapiente, eligendi necessitatibus ipsa eos tenetur
+          quam incidunt voluptas quia, in ratione adipisci esse repellendus.
+          Odio quasi inventore animi.
+        </p>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <h3>Project 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+          similique hic iure ducimus eligendi quibusdam praesentium facere saepe
+          sunt ipsa quaerat ex odit quod accusamus consequatur porro a
+          recusandae magni.
+        </p>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <h3>Project 4</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempora,
+          ullam atque neque quos ratione vitae consequuntur aspernatur sint
+          suscipit odit est earum quaerat alias ea rem eos natus molestiae.
+        </p>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <h3>Project 5</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          omnis laboriosam! Ullam vel veritatis laborum, excepturi, blanditiis
+          ut dicta rem unde consequuntur quisquam odio aliquid numquam!
+          Laboriosam vel quae magnam!
+        </p>
+      </div>
+      <!-- Add more project cards as needed -->
+    </section>
+
+    <footer>
+      <!-- Add your contact information or social media links here -->
+    </footer>
+  </body>
+</html>
