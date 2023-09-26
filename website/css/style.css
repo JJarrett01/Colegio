@@ -121,13 +121,26 @@ nav ul li a:hover {
 
 /* Style for individual slides (images) */
 .carousel img {
-    width:75%;
+    width:70%;
     height: auto;
     border-radius: 2px;
-    display: block;
+    margin: auto;
 }
 
-
+.slide{
+    padding: 20px;
+    margin: 5px;
+    background-color: rgba(116, 116, 116, 0.3);
+    border-radius: 10px;
+    height: 450px;
+    text-align: center;
+}
+.slide *{
+    padding: 4px;
+}
+.slide h2{
+    font-size:1.5;
+}
 /* Style for the carousel section */
 /* Style for the hero section */
 .hero {
@@ -173,9 +186,7 @@ nav ul li a:hover {
     background-color: #d60000; /* Darker red color on hover */
 }
 
-.carousel p{
-    margin: 10px;
-}
+
 /* Style for the projects section */
 .projects {
     background-color: #ffffffa9; /* Background color for the section */
@@ -250,8 +261,116 @@ nav ul li a:hover {
 }
 
 
-/* Style for the carousel container */
 
-/* Center align the content within each slide */
+
+
+/* Style for the footer section */
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style for the footer content */
+.footer-content {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Style for the copyright text */
+.footer p {
+    font-size: 14px;
+}
+
+/* Style for the footer links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px; /* Adjust spacing between links */
+}
+
+/* Style for the footer links' anchor text */
+.footer-links a {
+    text-decoration: none;
+    color: #ff0000; /* Red color for links */
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Style for the site map */
+/* Style for the site map */
+/* Style for the site map */
+.site-map {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align links to the left */
+    display: inline-block; /* Display list items in a single line */
+    margin-top: 10px;
+}
+
+.site-map li {
+    margin-right: 40px; /* Add spacing between site map links */
+    display: inline; /* Ensure list items appear in a single line */
+}
+
+.site-map a {
+    text-decoration: none;
+    color: #fff; /* Text color for site map links */
+    font-size: 16px;
+}
+.site-map a {
+    text-decoration: none;
+    color: #fff;
+
+    font-size: 18px;
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+.site-map  a:hover {
+    text-decoration: underline;
+    color: #ff0000; /* Change link color on hover */
+}
+/* Style for the newsletter signup form */
+.newsletter-form {
+    margin-top: 20px; /* Add spacing between site map and form */
+}
+
+.newsletter-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 250px; /* Adjust the width as needed */
+    font-size: 14px;
+    border: 2px solid #ff0000; /* Red border for the input field */
+    border-radius: 5px;
+}
+
+.newsletter-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red color for the button */
+    color: #fff; /* Text color for the button */
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Add spacing between input and button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+.newsletter-form button[type="submit"]:hover {
+    background-color: #d60000; /* Darker red color for the button on hover */
+}
+
 
 
