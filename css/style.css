@@ -428,3 +428,21 @@ nav ul li a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+/* Styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 576px) {
+    /* Adjust styles for project cards */
+    .project-card {
+        width: 100%; /* Make project cards full width */
+        margin: 0 0 20px; /* Add vertical spacing between project cards */
+    }
+ }
+ 
+ /* Styles for tablets and larger screens */
+ @media (min-width: 577px) {
+    /* Reset styles for project cards to their original values */
+    .project-card {
+        width: auto;
+        margin: 20px;
+    }
+ }
+ 
