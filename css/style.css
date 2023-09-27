@@ -437,7 +437,7 @@ nav ul li a:hover {
     }
     .projects {
         background-color: #ffffffa9; /* Background color for the section */
-        padding: 10px 20px; /* Adjust top and bottom padding for spacing */
+        padding: 5px 5px; /* Adjust top and bottom padding for spacing */
         text-align: center;
     }
  }
