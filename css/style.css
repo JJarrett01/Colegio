@@ -435,6 +435,11 @@ nav ul li a:hover {
         width: 100%; /* Make project cards full width */
         margin: 0 0 20px; /* Add vertical spacing between project cards */
     }
+    .projects {
+        background-color: #ffffffa9; /* Background color for the section */
+        padding: 10px 20px; /* Adjust top and bottom padding for spacing */
+        text-align: center;
+    }
  }
  
  /* Styles for tablets and larger screens */
