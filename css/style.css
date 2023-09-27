@@ -437,7 +437,7 @@ nav ul li a:hover {
     }
     .projects {
         background-color: #ffffffa9; /* Background color for the section */
-        padding: 5px 5px; /* Adjust top and bottom padding for spacing */
+        padding: 10px 15px; /* Adjust top and bottom padding for spacing */
         text-align: center;
     }
  }
@@ -450,4 +450,31 @@ nav ul li a:hover {
         margin: 20px;
     }
  }
- 
+ /* Styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 576px) {
+    /* Adjust the layout for smaller screens */
+    .site-map {
+        text-align: center; /* Center-align the links */
+    }
+
+    .site-map li {
+        margin-right: 0; /* Remove margin between links */
+        margin-bottom: 10px; /* Add vertical spacing between links */
+        display: block; /* Make links stack vertically */
+    }
+}
+
+/* Styles for tablets and larger screens */
+@media (min-width: 577px) {
+    /* Reset the layout for tablets and larger screens */
+    .site-map {
+        text-align: left; /* Left-align the links */
+    }
+
+    .site-map li {
+        margin-right: 40px; /* Restore margin between links */
+        margin-bottom: 0; /* Remove vertical spacing between links */
+        display: inline; /* Make links display in a single line */
+    }
+}
+
