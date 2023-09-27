@@ -44,6 +44,12 @@
             dots: true, // Display navigation dots
             arrows: true, // Hide navigation arrows
         responsive: [
+        {
+                breakpoint: 576, // Breakpoint for screens with a maximum width of 576px
+                settings: {
+                    slidesToShow: 1, // Show 1 slide at a time on small screens
+                },
+            },
             {
                 breakpoint: 768, // Breakpoint for tablets
                 settings: {
