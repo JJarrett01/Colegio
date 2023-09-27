@@ -129,7 +129,11 @@ nav ul li a {
 nav ul li a:hover {
     color: #fff; /* Change link color on hover */
 }
-
+header img{
+    display: block;
+    width: 16%;
+    height: auto;
+}
 /* Style for the carousel container */
 .carousel-container {
     width: 85%; /* Adjust the width as needed */
@@ -277,36 +281,6 @@ nav ul li a:hover {
     font-size: 16px;
     color: #333; /* Text color for project descriptions */
 }
-/* Style the carousel dots */
-.slick-dots {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin-top: 20px; /* Adjust the margin to position the dots vertically */
-}
-
-.slick-dots li {
-    display: inline-block;
-    margin: 0 5px; /* Adjust the margin to control the spacing between dots */
-}
-
-.slick-dots li button {
-    width: 12px; /* Adjust the width of the dots */
-    height: 12px; /* Adjust the height of the dots */
-    border: none;
-    border-radius: 50%; /* Make the dots circular */
-    background-color: #740000; /* Red color for the dots */
-    opacity: 0.7; /* Adjust the opacity for the dots */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Add a hover effect */
-}
-
-.slick-dots li.slick-active button {
-    background-color: #d60000; /* Darker red color for active dot */
-    opacity: 1; /* Full opacity for active dot */
-}
-
-
 
 
 
@@ -367,11 +341,6 @@ nav ul li a:hover {
     display: inline; /* Ensure list items appear in a single line */
 }
 
-.site-map a {
-    text-decoration: none;
-    color: #fff; /* Text color for site map links */
-    font-size: 16px;
-}
 .site-map a {
     text-decoration: none;
     color: #fff;
