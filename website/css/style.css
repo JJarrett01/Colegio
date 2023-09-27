@@ -1,3 +1,21 @@
+/* Import a Google Font (e.g., Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the font to the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Increase font size for section titles */
+section h2 {
+    font-size: 28px;
+}
+
+/* Adjust font size for paragraphs */
+section p {
+    font-size: 18px;
+}
 /* Reset default margin and padding for elements */
 * {
     margin: 0;
@@ -141,6 +159,22 @@ nav ul li a:hover {
 .slide h2{
     font-size:1.5;
 }
+@media (max-width: 768px) {
+    .carousel {
+        width: 100%; /* Make the carousel full-width for mobile */
+    }
+
+    .carousel img {
+        width: 100%; /* Make images fill the width of the carousel container */
+        height: auto; /* Maintain the aspect ratio of images */
+    }
+
+    .slide {
+        padding: 10px; /* Reduce padding for smaller screens */
+        margin: 5px; /* Adjust margins as needed */
+    }
+}
+
 /* Style for the carousel section */
 /* Style for the hero section */
 .hero {
@@ -179,11 +213,12 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease; /* Add a hover effect */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add a hover effect */
 }
 
 .btn:hover {
     background-color: #d60000; /* Darker red color on hover */
+    transform: scale(1.05);
 }
 
 
@@ -212,7 +247,18 @@ nav ul li a:hover {
     border: 1px solid rgba(255, 255, 255, 0.2); /* Border for project cards */
     text-align: center;
 }
+/* Add a hover effect to project cards */
+.project-card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}
 
+/* Change text color and background on hover */
+.project-card:hover h3 {
+    color: #ff0000; /* Red color on hover */
+}
+
+/* Additional hover effects can be added as needed */
 /* Style for project images */
 .project-card img {
     max-width: 100%; /* Ensure images fit within the project card */
@@ -374,3 +420,11 @@ nav ul li a:hover {
 
 
 
+
+
+/* Truncate text and add an ellipsis (...) */
+.slide {
+    max-height: 500px; /* Adjust the height as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

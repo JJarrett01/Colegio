@@ -16,6 +16,7 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -31,21 +32,48 @@
         </ul>
       </nav>
       <script>
+       
         $(document).ready(function () {
-          $(".carousel").slick({
-            autoplay: true, // Auto-play the carousel
+          $(".read-more").click(function () {
+        // Toggle the visibility of the paragraph within the clicked slide
+        $(this).siblings("p").slideToggle();
+    });
+    $(".carousel").slick({
+        // Other settings...
+        autoplay: true, // Auto-play the carousel
             dots: true, // Display navigation dots
             arrows: true, // Hide navigation arrows
-            responsive: [
-              {
-                breakpoint: 10000,
+        responsive: [
+            {
+                breakpoint: 768, // Breakpoint for tablets
                 settings: {
-                  slidesToShow: 3,
-                },
-              },
-            ],
-          });
-        });
+                    slidesToShow: 2 // Show 2 slides at a time on tablets
+                }
+            },
+            {
+                breakpoint: 992, // Breakpoint for desktops
+                settings: {
+                    slidesToShow: 3 // Show 3 slides at a time on desktops
+                }
+            },
+            {
+                breakpoint: 1200, // Breakpoint for large screens
+                settings: {
+                    slidesToShow: 4// Show 4 slides at a time on large screens
+                }
+            },
+            {
+                breakpoint: 12000, // Breakpoint for large screens
+                settings: {
+                    slidesToShow: 4// Show 4 slides at a time on large screens
+                }
+            }
+            // Add more breakpoints and settings as needed
+        ],
+    });
+});
+
+        
       </script>
     </header>
     <section class="hero">
@@ -68,6 +96,7 @@
               voluptatum commodi dolorum molestias maiores at dolorem fugit,
               deserunt soluta explicabo porro.
             </p>
+            
           </div>
           <div class="slide">
             <h2>Slide 2</h2>
@@ -79,6 +108,7 @@
               quaerat eum impedit cupiditate perferendis voluptatibus fugiat
               esse commodi suscipit odio, accusamus accusantium.
             </p>
+    
           </div>
           <div class="slide">
             <h2>Slide 3</h2>
@@ -90,6 +120,7 @@
               voluptate quod adipisci voluptas unde necessitatibus, cum
               accusamus dolorum repudiandae rerum. Quod, eaque?
             </p>
+           
           </div>
           <div class="slide">
             <h2>Slide 4</h2>
@@ -101,6 +132,7 @@
               quasi mollitia, adipisci dignissimos totam. Recusandae fugiat hic
               repellat accusantium?
             </p>
+            
           </div>
           <!-- Add more slides as needed -->
         </div>
